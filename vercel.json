@@ -11,12 +11,11 @@
   ],
   "routes": [
     {
-      "src": "/.*",
+      "src": "^/(.*)$",
       "dest": "/index.html"
     }
   ],
-  "buildCommand": "npm install --legacy-peer-deps && npm run build",
-  "devCommand": "npm run dev",
-  "framework": "vite",
-  "installCommand": "npm install --legacy-peer-deps"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
