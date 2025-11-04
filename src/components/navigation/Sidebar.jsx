@@ -90,7 +90,7 @@ const Sidebar = () => {
           <NavItem 
             icon={<History size={20} />} 
             label="My Report" 
-            to="/MyReport"
+            to="/my-report"
             isCollapsed={!sidebarOpen}
           />
           <NavItem 
